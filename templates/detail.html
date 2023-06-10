@@ -1,0 +1,21 @@
+{% extends "index.html" %}
+{% block title %}Results{% endblock %}
+
+{% block message %}
+    <hr />
+    <h4 class="text-center"> Nombre Cliente: {{name[1]}} </h4>
+    <p class="text-center"><i> RUT: {{query}}</i></p>
+<p class="text-center"><i> Riesgo: {{risk[1]}}</i></p>
+    
+{% endblock %}
+
+{% block content %}
+  <h1 class="text-center">Result</h1>
+    <ul class="list-group">
+        {% for info in result %}
+          <li class="list-group-item list-group-item-success text-center">{{result[info].name}}: {{result[info][1]}}</li>
+        {% endfor %}
+    </div>
+  </div>
+
+{% endblock %}
