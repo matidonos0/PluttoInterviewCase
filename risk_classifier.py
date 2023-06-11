@@ -1,6 +1,3 @@
-import pandas as pd
-
-
 def riskyfier(df):
     if df['Tiene B. concursal'] != 0:
         return 'high_risk'
