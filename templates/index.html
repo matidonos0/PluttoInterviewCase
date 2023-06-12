@@ -35,6 +35,7 @@
     <div class="container">
         <h1 class="text-center">Client Summary</h1>
         <p class="text-center">Search a client by RUT (ex: 68064543)</p>
+        <p class="text-center">{{additional_text}}</p>
         <div class="row">
             <div class="col-lg-12 form-group-lg">
                 <form action="/detail" method="get">
@@ -55,7 +56,7 @@
     {% block content %}
         <div class="page-header">
           <h1 class="text-center">Overview of your clients</h1>
-          <p class="text-center">You have {{ids_count}} clients in your portfolio from which {{company_pct}}% are Companies. Besides, {{risky_pct}}% of all your clients are high risk. </p>
+          <p class="text-center">You have {{ids_count}} clients in your portfolio from which {{company_pct}}% are Companies. Besides, {{risky_pct}}% of all your clients are high risk.</p>
         </div>
     {% endblock %}
 

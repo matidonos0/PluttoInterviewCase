@@ -39,17 +39,18 @@
 
 <div class="container">
     {% block content %}
-        <div class="page-header">
-          <h1 class="text-center">Overview of your clients</h1>
-        </div>
 <div class="page-header">
-  The riskier industries in your porftolio are the following:
+  <h3>The riskier industries in your porftolio are the following:
+  </h3>
         </div>
+   <div class="table">
     {% for table in tables_hr %}
             {{ table|safe }}
     {% endfor %}
+      </div>
 <div class="page-header">
-  The industries with medium risk in your porftolio are the following:
+  <h3>The industries with medium risk in your porftolio are the following:
+  </h3>
         </div>
     {% for table in tables_mr %}
             {{ table|safe }}
